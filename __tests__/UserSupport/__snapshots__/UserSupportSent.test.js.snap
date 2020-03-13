@@ -1,0 +1,186 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "backgroundColor": "#5F92F3",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#ffffff",
+            "fontSize": 66,
+          },
+          undefined,
+          Object {
+            "fontFamily": "PinAppIcon",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "marginTop": 50,
+        "padding": 100,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "paddingBottom": 100,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "paddingBottom": 40,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#ffffff",
+              "fontFamily": "Helvetica",
+              "fontSize": 14,
+              "fontWeight": "100",
+            }
+          }
+        >
+          Support Team
+        </Text>
+      </View>
+      <View>
+        <Text
+          style={
+            Object {
+              "color": "#ffffff",
+              "fontFamily": "Helvetica",
+              "fontSize": 12,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          Our team will email you back with a reply within the next 24 hours.
+        </Text>
+      </View>
+    </View>
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#ffffff",
+          "borderBottomWidth": null,
+          "borderColor": "#007aff",
+          "borderLeftWidth": null,
+          "borderRadius": 57,
+          "borderRightWidth": null,
+          "borderTopWidth": null,
+          "borderWidth": undefined,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 45,
+          "justifyContent": "center",
+          "opacity": 1,
+          "paddingBottom": 6,
+          "paddingTop": 6,
+          "shadowColor": undefined,
+          "shadowOffset": undefined,
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontSize": 24,
+            },
+            Object {
+              "color": "#000000",
+              "fontSize": 14,
+              "fontWeight": "bold",
+            },
+            undefined,
+          ]
+        }
+      >
+        Done
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": 20,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#ffffff",
+            "fontSize": 10,
+            "textAlign": "center",
+          }
+        }
+      >
+        Please check your emails.
+      </Text>
+    </View>
+  </View>
+  <Image
+    onError={[Function]}
+    onHeightChange={[Function]}
+    source={
+      Object {
+        "testUri": "../../../assets/img/city2.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "height": 0,
+          "width": 750,
+        },
+        Object {
+          "bottom": 0,
+          "position": "absolute",
+        },
+      ]
+    }
+  />
+</RCTSafeAreaView>
+`;

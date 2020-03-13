@@ -1,0 +1,316 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {},
+      Object {
+        "flexDirection": "column",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#000",
+          "fontFamily": "System",
+          "fontSize": 16,
+        },
+        Object {
+          "color": "#6E6969",
+          "fontSize": 18,
+          "fontWeight": "bold",
+          "marginBottom": 13.34,
+        },
+      ]
+    }
+    uppercase={false}
+  >
+    test
+  </Text>
+  <Text
+    numberOfLines={3}
+    style={
+      Array [
+        Object {
+          "color": "#000",
+          "fontFamily": "System",
+          "fontSize": 16,
+        },
+        Object {
+          "color": "#6E6969",
+          "fontSize": 21,
+          "marginBottom": 66,
+        },
+      ]
+    }
+    uppercase={false}
+  />
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "marginBottom": 36,
+      }
+    }
+  >
+    <View />
+  </View>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#000",
+          "fontFamily": "System",
+          "fontSize": 16,
+        },
+        Object {
+          "color": "#6E6969",
+          "fontSize": 18,
+          "fontWeight": "bold",
+          "marginBottom": 13.34,
+        },
+      ]
+    }
+    uppercase={false}
+  >
+    Store Hours
+  </Text>
+  <View
+    style={
+      Array [
+        Object {},
+        Object {
+          "marginTop": 20,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {},
+        Object {
+          "left": -40,
+          "marginBottom": 60,
+          "position": "relative",
+          "width": 750,
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={null}
+    >
+      <View
+        onPress={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderBottomWidth": 0.5,
+              "borderColor": "#c9c9c9",
+              "flexDirection": "row",
+              "marginLeft": 16,
+              "paddingBottom": 13,
+              "paddingRight": 16,
+              "paddingTop": 13,
+            },
+            Object {
+              "borderTopWidth": 0.5,
+              "marginLeft": 0,
+              "paddingLeft": 50,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "alignSelf": "center",
+              "flex": 1,
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "#000",
+                "fontFamily": "System",
+                "fontSize": 16,
+              }
+            }
+            uppercase={false}
+          >
+            test
+             website
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "alignSelf": "center",
+              "flex": 0.28,
+              "paddingBottom": null,
+              "paddingLeft": null,
+              "paddingRight": null,
+              "paddingTop": null,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Array [
+                  Object {
+                    "color": "#000",
+                    "fontSize": 30,
+                  },
+                  Object {
+                    "alignSelf": null,
+                    "color": "#c9c8cd",
+                    "fontSize": 22,
+                  },
+                ],
+                Object {
+                  "fontFamily": "Ionicons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={null}
+    >
+      <View
+        onPress={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderBottomWidth": 0.5,
+              "borderColor": "#c9c9c9",
+              "flexDirection": "row",
+              "marginLeft": 16,
+              "paddingBottom": 13,
+              "paddingRight": 16,
+              "paddingTop": 13,
+            },
+            Object {
+              "marginLeft": 0,
+              "paddingLeft": 50,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "alignSelf": "center",
+              "flex": 1,
+              "flexDirection": "row",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "alignSelf": "center",
+                "color": "#000",
+                "fontFamily": "System",
+                "fontSize": 16,
+              }
+            }
+            uppercase={false}
+          >
+            Report this listing
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "flex-end",
+              "alignSelf": "center",
+              "flex": 0.28,
+              "paddingBottom": null,
+              "paddingLeft": null,
+              "paddingRight": null,
+              "paddingTop": null,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Array [
+                  Object {
+                    "color": "#000",
+                    "fontSize": 30,
+                  },
+                  Object {
+                    "alignSelf": null,
+                    "color": "#c9c8cd",
+                    "fontSize": 22,
+                  },
+                ],
+                Object {
+                  "fontFamily": "Ionicons",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

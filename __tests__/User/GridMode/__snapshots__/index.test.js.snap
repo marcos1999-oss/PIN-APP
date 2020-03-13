@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": 30,
+      "paddingTop": 40,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <RCTScrollView
+      contentContainerStyle={
+        Object {
+          "marginBottom": 26,
+        }
+      }
+      data={
+        Array [
+          Object {
+            "firm": Object {
+              "lat": 60.155,
+              "lng": -1.145,
+            },
+            "id": "01",
+            "likesCount": 5,
+            "photo": Object {
+              "url": "https://www.easydrawingtips.com/wp-content/uploads/2019/10/spiky_male_hair_drawing.jpg",
+            },
+            "title": "demo test",
+            "viewsCount": 5,
+          },
+        ]
+      }
+      disableVirtualization={false}
+      getItem={[Function]}
+      getItemCount={[Function]}
+      getItemLayout={[Function]}
+      horizontal={false}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={10}
+      numColumns={2}
+      onContentSizeChange={[Function]}
+      onEndReached={[Function]}
+      onEndReachedThreshold={0.2}
+      onLayout={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      refreshControl={
+        <RefreshControlMock
+          onRefresh={[Function]}
+          refreshing={false}
+          title="refreshing ..."
+        />
+      }
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      showsVerticalScrollIndicator={false}
+      stickyHeaderIndices={Array []}
+      updateCellsBatchingPeriod={50}
+      viewabilityConfigCallbackPairs={Array []}
+      windowSize={21}
+    >
+      <RCTRefreshControl />
+      <View>
+        <View
+          style={null}
+        >
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              accessible={true}
+              isTVSelectable={true}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "white",
+                    "elevation": 1,
+                    "height": 495.34,
+                    "marginBottom": 26,
+                    "marginRight": 10,
+                    "shadowColor": "#000",
+                    "shadowOffset": Object {
+                      "height": 6,
+                      "width": 0,
+                    },
+                    "shadowOpacity": 0.16,
+                    "shadowRadius": 6,
+                    "transform": Array [
+                      Object {
+                        "translateY": 990.68,
+                      },
+                    ],
+                    "width": 335.2,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {},
+                      Object {
+                        "alignItems": "center",
+                        "backgroundColor": "white",
+                        "flex": 1,
+                        "flexDirection": "column",
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {},
+                        Object {
+                          "height": 409.34,
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                  >
+                    <Image
+                      source={
+                        Object {
+                          "uri": "https://www.easydrawingtips.com/wp-content/uploads/2019/10/spiky_male_hair_drawing.jpg",
+                        }
+                      }
+                      style={
+                        Object {
+                          "flex": 1,
+                          "resizeMode": "cover",
+                        }
+                      }
+                    />
+                  </View>
+                  <View
+                    style={
+                      Array [
+                        Object {},
+                        Object {
+                          "height": 86,
+                          "marginTop": 16,
+                          "paddingHorizontal": 8,
+                          "width": "100%",
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      numberOfLines={1}
+                      style={
+                        Array [
+                          Object {
+                            "color": "#000",
+                            "fontFamily": "System",
+                            "fontSize": 16,
+                          },
+                          Object {
+                            "color": "#6E6969",
+                          },
+                          Object {
+                            "alignSelf": "flex-start",
+                            "fontSize": 18,
+                          },
+                        ]
+                      }
+                      uppercase={false}
+                    >
+                      demo test
+                    </Text>
+                    <View
+                      style={
+                        Array [
+                          Object {},
+                          Object {
+                            "flexDirection": "row",
+                            "marginTop": 16,
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        style={
+                          Array [
+                            Object {},
+                            Object {
+                              "alignItems": "flex-start",
+                              "flexDirection": "row",
+                              "marginRight": 20,
+                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          allowFontScaling={false}
+                          style={
+                            Array [
+                              Object {
+                                "color": undefined,
+                                "fontSize": 12,
+                              },
+                              Object {
+                                "color": "#DF0103",
+                                "fontSize": 12,
+                                "marginTop": 4,
+                              },
+                              Object {
+                                "fontFamily": "PinAppIcon",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                        <Text
+                          style={
+                            Array [
+                              Object {
+                                "color": "#000",
+                                "fontFamily": "System",
+                                "fontSize": 16,
+                              },
+                              Object {
+                                "color": "#6E6969",
+                                "fontSize": 12,
+                                "marginLeft": 10,
+                              },
+                            ]
+                          }
+                          uppercase={false}
+                        >
+                          5
+                           Likes
+                        </Text>
+                      </View>
+                      <View
+                        style={
+                          Array [
+                            Object {},
+                            Object {
+                              "alignItems": "flex-start",
+                              "flexDirection": "row",
+                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          allowFontScaling={false}
+                          style={
+                            Array [
+                              Object {
+                                "color": undefined,
+                                "fontSize": 12,
+                              },
+                              Object {
+                                "color": "#000",
+                                "fontSize": 12,
+                                "marginTop": 4,
+                              },
+                              Object {
+                                "fontFamily": "PinAppIcon",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              Object {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                        <Text
+                          style={
+                            Array [
+                              Object {
+                                "color": "#000",
+                                "fontFamily": "System",
+                                "fontSize": 16,
+                              },
+                              Object {
+                                "color": "#6E6969",
+                                "fontSize": 12,
+                                "marginLeft": 10,
+                              },
+                            ]
+                          }
+                          uppercase={false}
+                        >
+                          5
+                           Views 
+                        </Text>
+                      </View>
+                      <Text
+                        style={
+                          Array [
+                            Object {
+                              "color": "#000",
+                              "fontFamily": "System",
+                              "fontSize": 16,
+                            },
+                            Object {
+                              "color": "#9F9C9C",
+                              "fontSize": 10,
+                              "fontWeight": "bold",
+                              "marginLeft": 10,
+                            },
+                          ]
+                        }
+                        uppercase={false}
+                      >
+                         mi
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</View>
+`;

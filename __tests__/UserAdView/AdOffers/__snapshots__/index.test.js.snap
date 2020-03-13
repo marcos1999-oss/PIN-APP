@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {},
+      Object {
+        "flexDirection": "column",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginBottom": 30,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000",
+            "fontFamily": "System",
+            "fontSize": 16,
+          },
+          Object {
+            "color": undefined,
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "textTransform": "capitalize",
+          },
+        ]
+      }
+      uppercase={false}
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {},
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginBottom": 46,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000",
+            "fontFamily": "System",
+            "fontSize": 16,
+          },
+          Object {
+            "color": "#6E6969",
+            "fontSize": 18,
+            "fontWeight": "bold",
+          },
+        ]
+      }
+      uppercase={false}
+    >
+      Live Offers
+    </Text>
+    <View
+      style={
+        Array [
+          Object {},
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "marginLeft": 44,
+          },
+        ]
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 12,
+            },
+            Object {
+              "color": "#5F92F3",
+              "fontSize": 9,
+            },
+            Object {
+              "fontFamily": "PinAppIcon",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#000",
+              "fontFamily": "System",
+              "fontSize": 16,
+            },
+            Object {
+              "color": "#6E6969",
+              "fontSize": 15,
+              "marginLeft": 10,
+            },
+          ]
+        }
+        uppercase={false}
+      >
+        0
+         People Liked This
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {},
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "marginLeft": 44,
+          },
+        ]
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 12,
+            },
+            Object {
+              "color": "#000",
+              "fontSize": 9,
+            },
+            Object {
+              "fontFamily": "PinAppIcon",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#000",
+              "fontFamily": "System",
+              "fontSize": 16,
+            },
+            Object {
+              "color": "#6E6969",
+              "fontSize": 15,
+              "marginLeft": 10,
+            },
+          ]
+        }
+        uppercase={false}
+      >
+        0
+         Views
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {},
+        Object {
+          "flexDirection": "column",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {},
+          Object {
+            "height": 80,
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;

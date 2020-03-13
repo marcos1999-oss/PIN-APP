@@ -1,0 +1,73 @@
+fastlane_version '2.113.0'
+
+before_all do
+    ensure_git_status_clean
+end
+
+platform :ios do
+    desc 'Fetch certificates and provisioning profiles'
+    lane :certificates do
+        match(app_identifier: 'com.scopin', type: 'development')
+        match(app_identifier: 'com.scopin', type: 'appstore')
+    end
+
+    desc 'Build the iOS application.'
+    private_lane :build do
+        certificates
+        increment_build_number(xcodeproj: './ios/Pin.xcodeproj')
+        gym(scheme: 'Pin', workspace: './ios/Pin.xcworkspace')
+    end
+
+    desc 'Ship to Testflight.'
+    lane :beta do
+        ensure_git_branch(branch: 'dev')
+        build
+        pilot
+        commit_version_bump(message: 'Bump build', xcodeproj: './ios/Pin.xcodeproj')
+        push_to_git_remote
+    end
+
+    desc 'Deploy to AppStore'
+    lane :release do
+        ensure_git_branch(branch: 'master')
+      build_app(scheme: 'Pin')
+    end
+end
+
+platform :android do
+    desc 'Build the Android application.'
+    private_lane :build do
+        increment_version_code(gradle_file_path: 'android/app/build.gradle')
+        # Adjust the `build_type` and `flavor` params as needed to build the right APK for your setup
+        build_android_app(
+            task: 'assemble',
+            build_type: 'Release',
+            project_dir: 'android',
+            properties: {
+                'android.injected.signing.store.file' => ENV['KEYSTORE_PATH'],
+                'android.injected.signing.store.password' => ENV['KEYSTORE_PASSWORD'],
+                'android.injected.signing.key.alias' => ENV['KEYSTORE_ALIAS'],
+                'android.injected.signing.key.password' => ENV['KEYSTORE_PASSWORD'],
+            }
+        )
+    end
+
+    desc 'Ship to Google Play.'
+    lane :beta do
+        ensure_git_branch(branch: 'dev')
+        build
+        upload_to_play_store(
+            track: 'internal',
+            package_name: 'com.scopin',
+            apk: 'android/app/build/outputs/apk/release/app-release.apk'
+        )
+        commit_android_version_bump(gradle_file_folder: 'android/app')
+        push_to_git_remote
+    end
+
+    desc 'Ship to Google Play.'
+    lane :release do
+        ensure_git_branch(branch: 'master')
+        build
+    end
+end

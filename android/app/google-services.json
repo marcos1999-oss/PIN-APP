@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1083755495822",
+    "firebase_url": "https://pinapp-222219.firebaseio.com",
+    "project_id": "pinapp-222219",
+    "storage_bucket": "pinapp-222219.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083755495822:android:1492b5fc7e9ed884f0a4df",
+        "android_client_info": {
+          "package_name": "com.pin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083755495822-9jev8luov59pfv7tgqngp29hjt2t1j3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDN0qOYCfaVCqolO3YRtK0TkjEZ4ftJ4Fk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083755495822-9jev8luov59pfv7tgqngp29hjt2t1j3t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1083755495822-lujp2g9nd5cg9t9c938gslc4c4lmv1ab.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.scopin"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+image: node:11.3.0
+
+pipelines:
+  pull-requests:
+    '**':
+     - step:
+        name: Test
+        caches:
+          - nodecustom
+          - yarn
+        script:
+          - yarn
+          - yarn test
+  branches:
+    development:
+     - step:
+        name: Test
+        caches:
+          - nodecustom
+          - yarn
+        script:
+          - yarn
+          - yarn test
+definitions:
+  caches:
+    nodecustom: ./node_modules
+    yarn: /usr/local/share/.cache/yarn

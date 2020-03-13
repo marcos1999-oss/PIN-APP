@@ -1,0 +1,339 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "backgroundColor": "#5F92F3",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#fff",
+            "fontSize": 80,
+          },
+          undefined,
+          Object {
+            "fontFamily": "PinAppIcon",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+          Object {},
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 40,
+        "paddingVertical": 40,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#fff",
+            "borderBottomWidth": 0.5,
+            "borderColor": "#ccc",
+            "borderLeftWidth": 0.5,
+            "borderRadius": 2,
+            "borderRightWidth": 0.5,
+            "borderTopWidth": 0.5,
+            "elevation": 3,
+            "flexWrap": "nowrap",
+            "marginBottom": 5,
+            "marginLeft": 2,
+            "marginRight": 2,
+            "marginTop": 5,
+            "shadowColor": "#000",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 0.1,
+            "shadowRadius": 1.5,
+          },
+          Object {
+            "borderRadius": 40,
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#fff",
+              "borderRadius": 2,
+              "flexDirection": "row",
+              "paddingBottom": 10,
+              "paddingLeft": 15,
+              "paddingRight": 15,
+              "paddingTop": 10,
+            },
+            Object {
+              "borderRadius": 40,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "flex-start",
+              "alignSelf": "stretch",
+              "flex": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "paddingBottom": 60,
+                "paddingTop": 30,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingHorizontal": 10,
+                  "paddingVertical": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "width": "70%",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#555555",
+                      "fontSize": 21,
+                    }
+                  }
+                >
+                  New Deals
+                </Text>
+                <View
+                  style={
+                    Object {
+                      "height": 10,
+                    }
+                  }
+                />
+                <Text
+                  style={
+                    Object {
+                      "color": "#AFAFAF",
+                      "fontSize": 12,
+                    }
+                  }
+                >
+                  Get occasional notifications when there are new pins. So, you don’t miss any opportunities.
+                </Text>
+              </View>
+              <View>
+                <View
+                  disabled={false}
+                  onAsyncPress={[Function]}
+                  onMoveShouldSetResponder={[Function]}
+                  onMoveShouldSetResponderCapture={[Function]}
+                  onResponderEnd={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderReject={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderStart={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  onStartShouldSetResponderCapture={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "flex-start",
+                      "backgroundColor": "rgba(221, 221, 221, 1)",
+                      "borderRadius": 22,
+                      "height": 44,
+                      "justifyContent": "center",
+                      "overflow": "hidden",
+                      "width": 80,
+                    }
+                  }
+                  value={false}
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "rgba(255, 255, 255, 1)",
+                        "borderRadius": 22,
+                        "height": 42,
+                        "transform": Array [
+                          Object {
+                            "translateX": 1,
+                          },
+                        ],
+                        "width": 42,
+                      }
+                    }
+                  />
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "height": 20,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "alignItems": "flex-start",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingHorizontal": 10,
+                  "paddingVertical": 10,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "width": "70%",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#555555",
+                      "fontSize": 21,
+                    }
+                  }
+                >
+                  Timer
+                </Text>
+                <View
+                  style={
+                    Object {
+                      "height": 10,
+                    }
+                  }
+                />
+                <Text
+                  style={
+                    Object {
+                      "color": "#AFAFAF",
+                      "fontSize": 12,
+                    }
+                  }
+                >
+                  Get notified for your favorite deals an hour before timer ends.
+                </Text>
+              </View>
+              <View>
+                <View
+                  disabled={false}
+                  onAsyncPress={[Function]}
+                  onMoveShouldSetResponder={[Function]}
+                  onMoveShouldSetResponderCapture={[Function]}
+                  onResponderEnd={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderReject={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderStart={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  onStartShouldSetResponderCapture={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "flex-start",
+                      "backgroundColor": "rgba(221, 221, 221, 1)",
+                      "borderRadius": 22,
+                      "height": 44,
+                      "justifyContent": "center",
+                      "overflow": "hidden",
+                      "width": 80,
+                    }
+                  }
+                  value={false}
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "rgba(255, 255, 255, 1)",
+                        "borderRadius": 22,
+                        "height": 42,
+                        "transform": Array [
+                          Object {
+                            "translateX": 1,
+                          },
+                        ],
+                        "width": 42,
+                      }
+                    }
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <Image
+    onError={[Function]}
+    onHeightChange={[Function]}
+    source={
+      Object {
+        "testUri": "../../../assets/img/city2.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "height": 0,
+          "width": 750,
+        },
+        Object {
+          "bottom": 0,
+          "position": "absolute",
+        },
+      ]
+    }
+  />
+</RCTSafeAreaView>
+`;

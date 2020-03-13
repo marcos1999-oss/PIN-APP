@@ -1,0 +1,97 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'Pin' do
+  platform :ios, '9.0'
+
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  rn_path = '../node_modules/react-native'
+  pod 'React', path: rn_path, subspecs: [
+    'Core',
+    'CxxBridge',
+    'DevSupport',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTLinkingIOS',
+    'RCTNetwork',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket',
+  ]
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+  # Pods for Pin
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  pod 'AppCenter/Crashes', '~> 2.0.1'
+  pod 'AppCenter/Analytics', '~> 2.0.1'
+  pod 'AppCenterReactNativeShared', '~> 2.0.0'
+  pod 'RNCPushNotificationIOS', :path => '../node_modules/@react-native-community/push-notification-ios'
+
+  pod 'react-native-image-resizer', :path => '../node_modules/react-native-image-resizer'
+
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
+
+  pod 'react-native-fbsdk', :path => '../node_modules/react-native-fbsdk'
+
+  def fix_fb
+      node_modules_path = '../node_modules'
+      patched_text = File.read("./RCTFBSDKLoginButtonManager.m.patch")
+
+      File.open("#{node_modules_path}/react-native-fbsdk/ios/RCTFBSDK/login/RCTFBSDKLoginButtonManager.m", "w") {|file| file.puts patched_text}
+    # pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+
+    # pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
+
+  end
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+  pod 'react-native-safe-area-context', :path => '../node_modules/react-native-safe-area-context'
+  pod 'rn-fetch-blob', :path => '../node_modules/rn-fetch-blob', :podspec => '../rn-fetch-blob-fix.podspec'
+
+  pod 'react-native-netinfo', :path => '../node_modules/@react-native-community/netinfo'
+  pod 'RNFirebase', :path => '../node_modules/react-native-firebase/ios'
+  pod 'GoogleIDFASupport', '~> 3.14.0'
+  pod 'Fabric', '~> 1.10.2'
+  pod 'Crashlytics', '~> 3.14.0'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Performance'
+  pod 'Stripe', '~> 14.0.0'
+  pod 'tipsi-stripe', :path => '../node_modules/tipsi-stripe'
+
+  # Install additional dependencies
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
+
+
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
+  post_install do |installer|
+    rnfirebase = installer.pods_project.targets.find { |target| target.name == 'RNFirebase' }
+    rnfirebase.build_configurations.each do |config|
+      config.build_settings['HEADER_SEARCH_PATHS'] = '$(inherited) ${PODS_ROOT}/Headers/Public/**'
+    end
+    installer.pods_project.targets.each do |target|
+      # The following is needed to ensure the "archive" step works in XCode.
+      # It removes React & Yoga from the Pods project, as it is already included in the main project.
+      # Without this, you'd see errors when you archive like:
+      # "Multiple commands produce ... libReact.a"
+      # "Multiple commands produce ... libyoga.a"
+
+      targets_to_ignore = %w(React yoga)
+
+      if targets_to_ignore.include? target.name
+        target.remove_from_project
+      end
+      fix_fb
+    end
+  end
+end
+
