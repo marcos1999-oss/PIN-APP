@@ -24,7 +24,7 @@
     "appcenter": "2.0.0",
     "appcenter-analytics": "2.0.0",
     "appcenter-crashes": "2.0.0",
-    "axios": "^0.19.1",
+    "axios": "^0.21.1",
     "babel-plugin-transform-remove-console": "^6.9.4",
     "email-validator": "^2.0.4",
     "flow-bin": "^0.116.1",
