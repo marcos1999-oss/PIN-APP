@@ -31,7 +31,7 @@
     "formik": "^1.5.1",
     "geolib": "^3.2.1",
     "json-api-normalizer": "^0.4.16",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "native-base": "^2.13.8",
     "numeral": "^2.0.6",
